@@ -1,6 +1,7 @@
 #define dht11_pin 14//Analog port 0 on Arduino Uno
 //#define dht11_pin 54 //Analog port 0 on Arduino Mega2560
-  
+
+
 byte read_dht11_dat()
 {
   byte i = 0;
