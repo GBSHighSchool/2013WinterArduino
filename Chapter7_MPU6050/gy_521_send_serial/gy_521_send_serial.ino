@@ -28,7 +28,7 @@
 // At power-up, all registers are zero, except these two:
 //      Register 0x6B (PWR_MGMT_2) = 0x40  (I read zero).
 //      Register 0x75 (WHO_AM_I)   = 0x68.
-// 
+//  modify suakii
 
 #include <Wire.h>
 
@@ -908,6 +908,9 @@ void loop()
 //  float accel_vector_length = sqrt(pow(accel_x,2) + pow(accel_y,2) + pow(accel_z,2));
   float accel_angle_y = atan(-1*accel_x/sqrt(pow(accel_y,2) + pow(accel_z,2)))*RADIANS_TO_DEGREES;
   float accel_angle_x = atan(accel_y/sqrt(pow(accel_x,2) + pow(accel_z,2)))*RADIANS_TO_DEGREES;
+  
+  //float accel_angle_y2 = atan2(-accel_x, accel_z)*RADIANS_TO_DEGREES;
+  //float accel_angle_x2 = atan2(accel_y, accel_z)*RADIANS_TO_DEGREES;
 
   float accel_angle_z = 0;
   
