@@ -3,6 +3,9 @@ int i = 0;
 void setup() {
   size(200, 200, P3D);
   translate(width/2, height/2);
+  
+  
+  
 }
 
 void draw() {
